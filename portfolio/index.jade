@@ -1,0 +1,69 @@
+extends ../main
+
+block content
+  h2
+    i.fa.fa-briefcase
+      | Trabajos
+  h3
+    span.fa-stack
+      i.fa.fa-circle.fa-stack-2x
+      i.fa.fa-puzzle-piece.fa-stack-1x.fa-inverse
+    | Sistemas Web
+  
+  ul.sistemas
+    li
+      img(src='/port/sistemas/sia.png', title='Sistema Web Integral de Abastecimiento para Municipalidades (demo.abastecimiento.pe)')
+    li
+      img(src='/port/sistemas/cafetin.png', title='Sistema para control de cafetín en hoteles')
+    li
+      img(src='/port/sistemas/asistencia.png', title='Asistencia de alumnos por curso y documento')
+  h3
+    span.fa-stack
+      i.fa.fa-circle.fa-stack-2x
+      i.fa.fa-puzzle-piece.fa-stack-1x.fa-inverse
+    | Drupal y administración de contenido
+  ul.drupal
+    li
+      img(src='/port/mabey.jpg', title='Hoteles Mabey (hotelesmabey.com)')
+    li
+      img(src='/port/cienciano.jpg', title='Web Oficial del Club Cienciano del Cusco (cienciano.com)')
+    li
+      img(src='/port/intercultural.jpg', title='Directorio Intercultural (intercultural.edu.pe)')
+    li
+      img(src='/port/cpiis.jpg', title='Ingeniería Informática y de Sistemas - UNSAAC (iisunsaac.com)')
+    li
+      img(src='/port/itegra.jpg', title='Itegracion (itegracion.com)')
+    li
+      img(src='/port/its.jpg', title='Inkas Travel Services (inkastravelservice.com)')
+    li
+      img(src='/port/legacy.jpg', title='Legacy Humanitarian (legacyperu.org)')
+    li
+      img(src='/port/patagonia.jpg', title='Patagonia Elements (patagoniaelements.com)')
+    li
+      img(src='/port/punto.jpg', title='Grupo Punto Azul (grupopuntoazul.com)')
+    li
+      img(src='/port/re.jpg', title='River Explorers (riverexplorers.com)')
+    li
+      img(src='/port/hp.jpg', title='Hoteles Perú (hotelesperu.com)')
+    li
+      img(src='/port/amazonwildlife.jpg', title='Amazon Wild Life Perú (amazonwildlifeperu.com)')
+
+block js
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+  script(src='/javascripts/jquery.bxslider/jquery.bxslider.min.js')
+          
+  script(type='text/javascript')
+    (function($){
+      $('.drupal').bxSlider({
+        captions: true,
+        mode: 'fade',
+      });
+
+      $('.sistemas').bxSlider({
+        captions: true,
+        mode: 'fade',
+      });
+    })(jQuery)
+
+block css
+  link(href='/javascripts/jquery.bxslider/jquery.bxslider.css', rel='stylesheet')

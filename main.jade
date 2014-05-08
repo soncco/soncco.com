@@ -1,0 +1,58 @@
+!!! 5
+html
+  head
+    title Braulio Soncco - Web Developer
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    meta(name='description', content='Sitio web personal de Braulio A. Soncco Pimentel - Web Developer, Esposo, Mormón.')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block css
+    link(rel='icon', href='/images/soncco.ico', type='image/x-icon')
+  body
+    #main
+      header#header
+        h1
+          a(href='/') Braulio Soncco
+        p Desarrollador Web Front-End/Back-End
+        #social
+          ul
+            li
+              a(href='/portfolio', title='Portfolio de Trabajos')
+                i.fa.fa-briefcase.fa-2x
+            //
+              li
+                a(href='/blog', title='Blog')
+                  i.fa.fa-book.fa-2x
+            li
+              a(href='https://twitter.com/brau')
+                i.fa.fa-twitter.fa-2x
+            li
+              a(href='https://plus.google.com/107447198372749768472/posts')
+                i.fa.fa-google-plus.fa-2x
+            li
+              a(href='http://pe.linkedin.com/in/soncco')
+                i.fa.fa-linkedin.fa-2x
+            li
+              a(href='https://github.com/soncco')
+                i.fa.fa-github.fa-2x
+      #content
+        block content
+      footer#footer
+        p
+          a(href='/') Braulio Andrés Soncco Pimentel  2013 - 2014
+      block js
+      script
+        (function(i,s,o,g,r,a,m){
+        i['GoogleAnalyticsObject']=r;
+        i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)}
+        ,i[r].l=1*new Date();
+        a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];
+        a.async=1;
+        a.src=g;
+        m.parentNode.insertBefore(a,m)
+        }
+        )(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-8521364-19', 'soncco.com');
+        ga('send', 'pageview');
